@@ -26,7 +26,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem 2rem;
-    /* background-color: var(--primary-color); */
 }
 
 .logo {
@@ -55,14 +54,17 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-strong{
+
+strong {
     color: #0000ff;
+    text-align: center;
 }
+
 .bounce-btn {
     animation: bounce 0.6s infinite alternate;
 }
 
-.bounce-btn a{
+.bounce-btn a {
     width: auto;
 }
 
@@ -97,7 +99,6 @@ strong{
     object-fit: cover;
 }
 
-/*  */
 .section_top {
     height: 85vh;
     width: 100%;
@@ -171,18 +172,17 @@ strong{
     width: 100%;
 }
 
-.slider {
-    width: 100%;
-    border-radius: 10px;
+.contentt {
+    margin-left: 240px;
+    padding: 20px;
 }
 
-.slider-track {
-    width: calc(800px * 10);
-    animation: slide 30s linear infinite;
+section {
+    margin-bottom: 100px;
 }
 
-.slider:hover .slider-track {
-    animation-play-state: paused;
+section h2 {
+    color: #004e98;
 }
 
 .card-container {
@@ -214,15 +214,6 @@ strong{
 .card h5 {
     color: var(--hover-blue);
     font-size: 1.2rem;
-}
-
-.toc h2 {
-    color: var(--primary-color);
-}
-
-.toc ul {
-    list-style: square;
-    margin-left: 1rem;
 }
 
 .footer {
@@ -304,17 +295,11 @@ strong{
     }
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 @media (max-width: 768px) {
+    .logo a {
+        display: none;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -328,13 +313,4 @@ strong{
     .footer-column h4 {
         margin-top: 20px;
     }
-}
-
-
-.color {
-    background-color: var(--secondary-color);
-}
-
-.color2 {
-    background-color: var(--primary-color);
 }
